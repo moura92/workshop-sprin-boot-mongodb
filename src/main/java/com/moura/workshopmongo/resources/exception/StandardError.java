@@ -2,33 +2,33 @@ package com.moura.workshopmongo.resources.exception;
 
 import java.io.Serializable;
 
-public class StandarError implements Serializable {
+public class StandardError implements Serializable {
 	static final long serialVersionUID = 1L;
 
-	private Long id;
+	private Long timestamp;
 	private Integer status;
 	private String error;
 	private String message;
 	private String path;
 
-	public StandarError() {
+	public StandardError() {
 	}
 
-	public StandarError(Long id, Integer status, String error, String message, String path) {
+	public StandardError(Long timestamp, Integer status, String error, String message, String path) {
 		super();
-		this.id = id;
+		this.timestamp = timestamp;
 		this.status = status;
 		this.error = error;
 		this.message = message;
 		this.path = path;
 	}
 
-	public Long getId() {
-		return id;
+	public Long getTimestamp() {
+		return timestamp;
 	}
 
-	public void setId(Long id) {
-		this.id = id;
+	public void setTimestamp(Long timestamp) {
+		this.timestamp = timestamp;
 	}
 
 	public Integer getStatus() {
